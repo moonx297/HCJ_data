@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visible and hidden</title>
+    <style>
+        img{ opacity: 0.4; }
+        img:hover{ opacity: 1.0;}
+        #a{                                         /*a일때는 숨기고 b일때는 보여줘~!*/
+            visibility: hidden;
+            border: 1px dotted red;
+        }
+        #b{
+            visibility: visible;
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <h1>visible 속성</h1>
+    <img id="a" src="img/coffee.jpg" width="150" height="120" alt="coffee">
+    <img id="b" src="img/star.jpg" width="150" height="120" alt="star">
+</body>
+</html>

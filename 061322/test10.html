@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5 전의 레이아웃</title>
+    <style>
+        #header{
+            background-color: yellow;
+            width: 100%;
+            height: 50px;       /*높이는 픽셀. 픽셀px은 고정이라 세로로 늘렸다 줄여도 고정*/
+        }
+        #nav{
+            width: 30%;
+            background-color: red;
+            height: 100px;
+            float: left;
+
+        }
+        #content{
+            width: 70%;
+            background-color: rgb(80, 80, 141);
+            float: right;
+            height: 100px;
+
+        }
+        #footer{
+            background-color: aqua;
+            width: 100%;
+            height: 50px;
+            clear: both;    /*both: 양쪽을 클리어하라는 뜻. float를 위에서 left right으로 정해놨으니 따라 내려오니 clear해주는것.*/
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">header</div>
+        <div id="nav">nav</div>
+        <div id="content">content</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>
