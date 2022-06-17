@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#text").click(function(){
+                alert($("#target").text());     //target에 있어서 text를 해라   #개수만큼 body안에 id가 있어야 한다.
+            });
+            $("#html").click(function(){
+                alert($("#target").html());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="target">이것은<strong>하나의 </strong> 단락입니다</p>
+    <button id="text">text()</button> 
+    <button id="html">html()</button>     <!-- shift + alt + 방향키 -->
+</body>
+</html>
+
+<!-- text: 문장만 보여줌
+html: 소스를 보여줌 -->

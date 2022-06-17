@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문희인</title>
+   
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $("button").click(function(){           
+                    //너가 버튼을 누르면 div1이 실행되는데 클래스가 추가되고 워닝이 뜰건데 검정색 보더와 노란 배경이 뜰거다.
+                    $("#div1").addClass("warning");
+                });
+            });
+        
+    </script>
+     <style>
+        .warning{
+            border: 1px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id = "div1">
+        <p>예제 단락입니다.</p>
+        </div>
+        <br>
+        <button>눌러보시오~</button>
+    
+</body>
+</html>
