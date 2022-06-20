@@ -1,0 +1,45 @@
+*{                  /* *: 웹 페이지 전체에 적용해라 */
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+}
+a{color: inherit; text-decoration: none;} 
+/* a는 태그에 대한 속성. 링크 타고 들어가는 것에 대한 속성. 요즘 링크는 밑줄을 제거하라. 
+decoration =none. */
+button{cursor: pointer;}    
+/* 버튼에 댔을때 커서 모양을 포인터로 하라. */
+body,html{min-width: 960;}  
+/* 1024 x 768 에 맞추기 위해 960으로 설정 */
+.all{width: 100%; float: left;}
+.wrap{width: 960px;}
+.clear{clear: both; position:inherit;}
+
+header{height: 130px;}              /* 와이어 프레임 값 */
+#header_logo{padding-top: 20px;}
+.logo{height: 100px; overflow: hidden; float: left;}
+.logo>a>img{width:250px;}
+nav{float: right; margin-top: 30px; padding: 10px;}
+.nav{width: 600px; height: 20px}
+.nav>li{float: left; width: 200px; text-align: center; position: relative; transition: all 0.4s; padding: 5px 0}
+.nav>li:hover{background-color: #7b422e;color: #FFF}
+/* hover는 마우스를 올려놓을때! */
+
+.submenu{display: none;background-color: rgba(255, 255, 255, 0.8);position:absolute;z-index: 1;width: 100%;margin-top: 5px}
+/* display: none 은 submenu는 평소에 보이지 않다가 클릭하면 보이게 해야하므로 none으로 가려준것
+   submenu는 밑으로 배열*/
+.submenu>li{padding: 5px 0;transition: all 0.4s; color: #000}
+.submenu>li:hover{background-color: #bb692d;color: inherit}
+
+#imgslide{height: 400px;}
+
+#contents{height: 500px;}
+
+footer{
+    height: 150px;
+    max-width: 100%;
+    margin-top: 30px;
+    background-color: #bb692d;
+    color: #FFFFFF;
+    overflow: hidden;
+}
